@@ -1,12 +1,98 @@
-﻿@page
-@model IndexModel
-@{    
-    ViewData["Title"] = "Home page";
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Overwatch Fan Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c33;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
 
-<div class="text-center">
-    <h1 class="display-4">Paula é um power bottom</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <hr />
-    <div>Host operating system: @Model.OSVersion</div>
-</div>
+        header {
+            background-color: #0079C2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #006298;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 10px;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Overwatch Fan Site</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#news">News</a></li>
+            <li><a href="#heroes">Heroes</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="news">
+            <h2>Latest News</h2>
+            <p>Stay up to date with the latest Overwatch news and updates.</p>
+        </section>
+
+        <section id="heroes">
+            <h2>Heroes</h2>
+            <p>Learn about your favorite Overwatch heroes and their abilities.</p>
+        </section>
+
+        <section id="media">
+            <h2>Media</h2>
+            <img class="hero-image" src="overwatch-image.jpg" alt="Overwatch Image">
+            <p>Check out Overwatch images and videos.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is a fan-made website dedicated to Overwatch.</p>
+        </section>
+    </div>
+
+</body>
+</html>
